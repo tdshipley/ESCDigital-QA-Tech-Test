@@ -74,7 +74,7 @@ In a client situation, I would be happy to add these extra test hooks to applica
 But I would also look to pair with the developers within the team and use that pairing as an opportunity to ensure
 testability of the source code had been considered and any attributes like this needed had been added.
 
-#### Adding ArrayChallenge Logic as a Private Method in the ArrayTest Class
+### Adding ArrayChallenge Logic as a Private Method in the ArrayTest Class
 
 The task requires the candidate to solve an algorithm style question to find the index of the array where the elements to the
 left or right of that index equal each other. This logic in a more typical application would probably exist in its own class
