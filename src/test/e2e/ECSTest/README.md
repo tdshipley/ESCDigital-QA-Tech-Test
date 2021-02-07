@@ -87,3 +87,19 @@ rather than the ArrayTest class as I have done here for clarity. Some examples o
 
 As noted in my code comment the last two cases could also be changed to throw an _ArgumentException_ rather than return null
 but that is a programing style question which would be best left to the team.
+
+### Recursion vs Iteration
+In ArrayTest you will notice two tests and solutions. The first uses an iterative solution to the Array Challenge and
+the second a recursive one. As noted in my code comment I would favour an iterative approach (and included the Recursive
+one for a bit of fun) in most cases for two reasons.
+
+#### Recursion Potential Pitfall: Stackoverflow Exceptions
+As the size of the array increases the recursive solution could throw a Stackoverflow exception. This is due to how recursion works.
+
+Each additional call to the method will add another frame to the stack which has a memory cost. With a large enough array the memory
+available to the stack will be exhausted and an exception thrown.
+
+#### Clarity
+It is easier to reason about the iterative approach than the recursive one. This is first because we as developers come across this
+approach much more often. Secondly, recursion requires you to think about the problem differently using case outcomes rather than
+execution flow logic.
