@@ -95,7 +95,6 @@ namespace ECSTest
             {
                 int leftTotal = array.Take(middleIndex).ToArray().Sum();
                 int rightTotal = array.Skip(middleIndex + 1).ToArray().Sum();
-                int middleValue = array[middleIndex];
 
                 if(leftTotal == rightTotal)
                 {
@@ -128,7 +127,6 @@ namespace ECSTest
             // Base Case 2 - found a match
             int leftTotal = array.Take(middleIndex).ToArray().Sum();
             int rightTotal = array.Skip(middleIndex + 1).ToArray().Sum();
-            int middleValue = array[middleIndex];
 
             if (leftTotal == rightTotal)
             {
